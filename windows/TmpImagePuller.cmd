@@ -7,8 +7,8 @@ echo y | del temp
 :makf
 echo y | rmdir temp /s
 mkdir temp
-xcopy %CD%\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets .\temp
+xcopy C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy\LocalState\Assets\* .\temp
 cd .\temp
 ren * *.png
-
+timeout /t 10
 
